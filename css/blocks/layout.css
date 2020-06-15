@@ -1,0 +1,18 @@
+.layout {
+  width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  min-height: 100vh;
+  border: 1px solid #000; }
+  @media (max-width: 1920px) {
+    .layout {
+      width: 100%; } }
+  @media (max-width: 1440px) {
+    .layout {
+      width: 1440px; } }
+  .layout__left-side {
+    flex: 0 0 330px;
+    border: 1px solid #000; }
+  .layout__body {
+    flex: 1 0 0;
+    border: 1px solid #000; }

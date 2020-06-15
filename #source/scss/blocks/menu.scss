@@ -1,0 +1,29 @@
+.menu {
+
+   &__list {
+      display: flex;
+      flex-direction: column;
+   }
+
+   &__item {
+   }
+
+   &__link {
+      display: flex;
+      padding: 15px 0 15px 0;
+      align-items: center;
+      @include bold;
+      &.activeLink {
+         color: $btnBg;
+         svg {
+            fill: $btnBg;
+         }
+      }
+   }
+   &__link-img {
+         width: 22px;
+         height: 22px;
+         position: relative;
+         margin: 0px 30px 0px 0px;
+      }
+}

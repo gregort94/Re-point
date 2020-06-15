@@ -1,0 +1,51 @@
+.page {
+
+   &__header {
+      padding: 60px 44px 0px 44px;
+      background: linear-gradient(180deg, #EEF2F5 0%, #F4F5FA 100%);
+   }
+
+   &__title {
+      font-size: 32px;
+      line-height: 40px;
+      @include bold;
+      margin: 0px 0px 60px 0px;
+   }
+
+   &__menu {
+     
+   }
+
+   &__menu-list {
+      display: flex;
+
+   }
+
+   &__menu-item {
+    margin: 0px 15px 0px 0px;
+   }
+
+   &__menu-link {
+      padding: 0px 0px 15px 0px;
+      font-size: 24px;
+      @include bold;
+      color: $btnBg;
+      display: block;
+      height: 100%;
+      width: 100%;
+      &.activeLink {
+         border-bottom: 4px solid $btnBg;
+      }
+   }
+   &__body {
+      padding: 24px 44px 0px 44px;
+      background-color: $leftSideBg;
+   }
+   &__requests {
+      display: grid;
+      grid-auto-rows: 52px;
+   }
+   &__request {
+      
+   }
+}

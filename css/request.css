@@ -1,0 +1,5 @@
+.request {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr 2fr;
+  padding: 10px 30px 10px 10px;
+  grid-gap: 15px; }
