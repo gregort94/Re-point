@@ -61,16 +61,12 @@
          margin: 0px 0px 0px 10px;
       }   
    }
-   &__pharm {
-      
-   }
    &:hover {
       background-color: $requestHoverBg;
    }
    &--confirmed {
       color: $requestConfirmedText;
    }
-
 }
 .request .request__pharm {
    @media (max-width: 1700px ) {

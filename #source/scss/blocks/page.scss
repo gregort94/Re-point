@@ -1,30 +1,20 @@
 .page {
-
    &__header {
       padding: 49px 44px 0px 44px;
       background: linear-gradient(180deg, #EEF2F5 0%, #F4F5FA 100%);
    }
-
    &__title {
       font-size: 32px;
       line-height: 40px;
       @include bold;
       margin: 0px 0px 25px 0px;
    }
-
-   &__menu {
-     
-   }
-
    &__menu-list {
       display: flex;
-
    }
-
    &__menu-item {
     margin: 0px 15px 0px 0px;
    }
-
    &__menu-link {
       padding: 0px 0px 5px 0px;
       font-size: 24px;
@@ -45,8 +35,5 @@
       display: grid;
       grid-auto-rows: 48px;
       margin: 32px 0px 0px 0px;
-   }
-   &__request {
-      
    }
 }
