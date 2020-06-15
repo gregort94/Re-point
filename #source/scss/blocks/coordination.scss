@@ -1,0 +1,24 @@
+.coordination {
+
+   &__overlay {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   &__body {
+      background-color: #fff;
+      width:800px;
+      height: 562px;
+      padding: 60px 120px;
+   }
+
+   &__title {
+      font-size: 32px;
+      @include bold;
+      text-align: center;
+   }
+
+   &__buttons {
+   }
+}
+

@@ -1,11 +1,82 @@
 .request {
    display: grid;
-   grid-template-columns: 1fr 2fr 1fr 1fr 2fr;
+   grid-template-columns: 0.2fr 0.8fr 2fr 1fr 1fr 2fr;
    padding: 10px 30px 10px 10px;
-   grid-gap: 15px;
-   &__field {
-      &--optional {
+   grid-gap: 25px;
+   grid-auto-rows:100%;
+   transition: color .2s;
+   @media (max-width: 1700px) {
+      grid-template-columns: 0.2fr 0.8fr 2fr 1fr 1.9fr;
+   };
+   & > div {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      overflow: hidden;
+      white-space: nowrap;
+      padding: 5px;
+   }
+   &--header {
+      color: $requestHeaderText;
+      font-size: 14px;
+      & > div {
+         cursor: pointer;
+      }
+      .checkbox__label {
+         background-color: $requestHeaderText;
+      }
+      .checkbox__label:after {
+         content: '';
+         display: block;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         width: 80%;
+         height: 2px;
+         background-color: #fff;
+         transform: translate(-50%, -50%);
       }
    }
+   &__adress  {
+      &-country {
+         position: relative;
+         height: 15px;
+         width: 25px;
+         margin: 0px 10px 0px 0px;
+      }
+   }
+   &__date {
+      &-arrow {
+         position: relative;
+         width: 12px;
+         height: 8px;
+         margin: 0px 0px 0px 5px;
+      }
+   }
+   &__name {
+      &-dot {
+         width:5px;
+         height: 5px;
+         border-radius: 50%;
+         background-color: $requestHeaderText;
+         margin: 0px 0px 0px 10px;
+      }   
+   }
+   &__pharm {
+      
+   }
+   &:hover {
+      background-color: $requestHoverBg;
+   }
+   &--confirmed {
+      color: $requestConfirmedText;
+   }
+
 }
+.request .request__pharm {
+   @media (max-width: 1700px ) {
+      display: none;
+   };
+}
+
 

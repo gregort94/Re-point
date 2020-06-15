@@ -1,0 +1,15 @@
+.input {
+
+   &__label {
+      color: #515C73;
+      font-size: 12px;
+   }
+
+   &__control {
+      width: 100%;
+      border: 1px solid #D2D6DE;
+      border-radius: 6px;
+      padding: 14px;
+      @include bold;
+   }
+}

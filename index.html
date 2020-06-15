@@ -98,27 +98,87 @@
 						</ul>
 					</nav>
 				</header>
-				<main class="page__body">
-					<button class="btn">Согласовать</button>
+				<div class="page__body">
+					<button class="btn btn--small">Согласовать</button>
 					<div class="page__requests">
-						<div class="request page__request">
-							<div class="request__confirmed">
-
+						<div class="request request--header">
+							<div class="request__check" tabindex="0">
+								<div class="checkbox">
+									<input type="checkbox" class="checkbox__input">
+									<label for="" class="checkbox__label" tabindex="0"></label>
+								</div>
 							</div>
-							<div class="request__date">Дата</div>
-							<div class="request__name">ФИО</div>
-							<div class="request__phone">Телефон</div>
-							<div class="request__pharm">Наименование аптеки</div>
-							<div class="request__adress">Адес филиала</div>
+							<div class="request__date" tabindex="0">Дата
+								<div class="request__date-arrow">
+									<img src="img/arrow.svg" alt="arrow" class="fitImg">
+								</div>
+							</div>
+							<div class="request__name" tabindex="0">ФИО <div class="request__name-dot"></div>
+							</div>
+							<div class="request__phone" tabindex="0">Телефон</div>
+							<div class="request__pharm" tabindex="0">Наименование аптеки</div>
+							<div class="request__adress" tabindex="0">Адрес филиала</div>
+						</div>
+						<div class="request request--confirmed">
+							<div class="request__check">
+								<div class="checkbox">
+									<input id="checkbox1" type="checkbox" class="checkbox__input">
+									<label for="checkbox1" class="checkbox__label" tabindex="0"></label>
+								</div>
+							</div>
+							<div class="request__date">31.10.2019</div>
+							<div class="request__name">Маховиков Анатолий Викторович</div>
+							<div class="request__phone">+7 (303) 555-0105</div>
+							<div class="request__pharm">Аптека 1</div>
+							<div class="request__adress">
+								<div>
+									<div class="request__adress-country">
+										<img class="fitImg" src="img/russiaFlag.svg" alt="russia">
+									</div>
+								</div>
+								<span>Свердловская область, Екатеринбур, Центральный, ул. Демидова, д 16/1</span>
+							</div>
 						</div>
 					</div>
-				</main>
+					<div class="coordination">
+						<div class="overlay coordination__overlay">
+							<div class="coordination__body">
+								<h2 class="coordination__title">Согласование</h2>
+								<div class="select">
+									<div class="select__header">
+										<p class="select__name">Решение</p>
+										<div class="select__current">
+											<span class="select__value">Согласовать</span>
+											<div class="select__icon">
+												<img class="fitImg" src="img/selectIco.svg" alt="select">
+											</div>
+										</div>
+									</div>
 
+									<div class="select__body">
+										<div class="select__item">Согласовать</div>
+										<div class="select__item">Отклонить</div>
+									</div>
+								</div>
+								<div class="input">
+									<label class="input__label">Комментарий</label>
+									<textarea placeholder="При отрицательном решении по заявке заполните поле 
+									комментарий" class="input__control"></textarea>
+								</div>
+								<div class="coordination__buttons">
+									<button class="btn">Добавить</button>
+									<button class="btn btn--secondary">Отменить</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					</main>
+			</section>
 		</div>
-		</section>
-	</div>
 	</div>
 	<script src="js/menuLinksControl.js"></script>
+	<script src="js/requestConfirmControl.js"></script>
+	<script src="js/selectControl.js"></script>
 </body>
 
 </html>
