@@ -1,6 +1,5 @@
 (() => {
 
-
    const addActiveLinkListener = (linksClass) => {
       const menuLinks = document.querySelectorAll(linksClass);
 
@@ -19,6 +18,5 @@
 
    addActiveLinkListener('.menu__link');
    addActiveLinkListener('.page__menu-link');
-
 
 })()

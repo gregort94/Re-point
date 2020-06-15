@@ -10,6 +10,9 @@
       border: 1px solid #D2D6DE;
       border-radius: 6px;
       padding: 14px;
-      @include bold;
+      &::placeholder{
+         color: $requestHeaderText;
+         line-height: 24px;
+      }
    }
 }

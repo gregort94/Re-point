@@ -2,13 +2,14 @@
    &__user {
       display: flex;
       align-items: center;
-      margin: 70px 0px 70px 0px;
+      margin: 43px 0px 70px 0px;
       &-avatar {
          position: relative;
          width: 44px;
          height: 44px;
          border-radius: 50%;
          overflow: hidden;
+         margin: 0px 15px 0px 0px;
       }
       &-name {
          flex: 1 0 0;

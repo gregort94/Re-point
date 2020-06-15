@@ -1,24 +1,67 @@
 .coordination {
-
+   display: none;
+   &.open {
+      display: block;
+   }
    &__overlay {
       display: flex;
       justify-content: center;
       align-items: center;
    }
    &__body {
+      border-radius: 7px;
       background-color: #fff;
-      width:800px;
+      width:725px;
       height: 562px;
-      padding: 60px 120px;
+      padding: 47px 109px;
+      position: relative;
    }
 
    &__title {
-      font-size: 32px;
+      font-size: 29px;
       @include bold;
       text-align: center;
+      margin: 0px 0px 37px 0px;
    }
-
+   &__close {
+      width: 14px;
+      height: 14px;
+      position: absolute;
+      top: 21px;
+      right: 21px;
+      cursor: pointer;
+      span {
+         width: 120%;
+         display: block;
+         background-color: $requestHeaderText;
+         height: 2px;
+         position: absolute;
+         top: 50%;
+         transform: translate(0, -50%);
+         transition: all 0.1s;
+         &:first-child {
+            transform: translate(0, -50%) rotate(-45deg);
+         }
+         &:last-child {
+            transform:  translate(0, -40%) rotate(45deg);
+         }
+      }
+      &:hover {
+         span {
+            height: 3px;
+            background-color: $btnBg;
+         }
+      }
+   }
    &__buttons {
+      display: flex;
+      justify-content: center;
+      margin: 43px 0px 0px 0px;
+      .btn:first-child {
+         margin-right: 58px;
+      }
    }
 }
-
+.coordination .input__control {
+   height: 126px;
+}

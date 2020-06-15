@@ -1,12 +1,12 @@
 .request {
    display: grid;
-   grid-template-columns: 0.2fr 0.8fr 2fr 1fr 1fr 2fr;
-   padding: 10px 30px 10px 10px;
+   grid-template-columns: 0.13fr 0.8fr 2fr 1fr 1fr 2fr;
+   padding: 0 30px 0 10px;
    grid-gap: 25px;
    grid-auto-rows:100%;
    transition: color .2s;
    @media (max-width: 1700px) {
-      grid-template-columns: 0.2fr 0.8fr 2fr 1fr 1.9fr;
+      grid-template-columns: 0.13fr 0.8fr 2fr 1fr 1.9fr;
    };
    & > div {
       display: flex;
@@ -14,7 +14,6 @@
       align-items: center;
       overflow: hidden;
       white-space: nowrap;
-      padding: 5px;
    }
    &--header {
       color: $requestHeaderText;

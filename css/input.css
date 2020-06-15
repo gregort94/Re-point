@@ -1,0 +1,9 @@
+.input__label {
+  color: #515C73;
+  font-size: 12px; }
+
+.input__control {
+  width: 100%;
+  border: 1px solid #D2D6DE;
+  border-radius: 6px;
+  padding: 14px; }

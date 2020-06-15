@@ -1,0 +1,12 @@
+.logo {
+  display: flex;
+  font-size: 14px;
+  line-height: 16px; }
+  .logo__img {
+    width: 92px;
+    height: 45px;
+    position: relative; }
+  .logo__text {
+    flex: 1 0 0;
+    color: #201f259a;
+    margin: 0px 0px 0px 15px; }

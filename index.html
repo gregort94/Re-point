@@ -93,13 +93,11 @@
 						<ul class="page__menu-list">
 							<li class="page__menu-item"><a href="#" class="activeLink page__menu-link">Требуют
 									подтверждения</a></li>
-							<li class="page__menu-item"><a href="#" class="page__menu-link">Требуют
-									подтверждения</a></li>
 						</ul>
 					</nav>
 				</header>
 				<div class="page__body">
-					<button class="btn btn--small">Согласовать</button>
+					<button id="openCoord" class="btn btn--small">Согласовать</button>
 					<div class="page__requests">
 						<div class="request request--header">
 							<div class="request__check" tabindex="0">
@@ -119,7 +117,127 @@
 							<div class="request__pharm" tabindex="0">Наименование аптеки</div>
 							<div class="request__adress" tabindex="0">Адрес филиала</div>
 						</div>
+						<div class="request">
+							<div class="request__check">
+								<div class="checkbox">
+									<input id="checkbox2" type="checkbox" class="checkbox__input">
+									<label for="checkbox2" class="checkbox__label" tabindex="0"></label>
+								</div>
+							</div>
+							<div class="request__date">30.10.2019</div>
+							<div class="request__name">Андреева Марина Александровна</div>
+							<div class="request__phone">+7 (907) 555-0101</div>
+							<div class="request__pharm">Аптека 1</div>
+							<div class="request__adress">
+								<div>
+									<div class="request__adress-country">
+										<img class="fitImg" src="img/russiaFlag.svg" alt="russia">
+									</div>
+								</div>
+								<span>Волгоградская область, Волгоград, ул. Красная, д. 45</span>
+							</div>
+						</div>
+						<div class="request">
+							<div class="request__check">
+								<div class="checkbox">
+									<input id="checkbox3" type="checkbox" class="checkbox__input">
+									<label for="checkbox3" class="checkbox__label" tabindex="0"></label>
+								</div>
+							</div>
+							<div class="request__date">29.10.2019</div>
+							<div class="request__name">Паршукова Маргарита Юрьевна</div>
+							<div class="request__phone">+7 (217) 555-0113</div>
+							<div class="request__pharm">Аптека 2</div>
+							<div class="request__adress">
+								<div>
+									<div class="request__adress-country">
+										<img class="fitImg" src="img/russiaFlag.svg" alt="russia">
+									</div>
+								</div>
+								<span>Вологодская область, Вологда, Железнодорожный, ул. Вокзальная, д. 38 </span>
+							</div>
+						</div>
 						<div class="request request--confirmed">
+							<div class="request__check">
+								<div class="checkbox">
+									<input checked id="checkbox4" type="checkbox" class="checkbox__input">
+									<label for="checkbox4" class="checkbox__label" tabindex="0"></label>
+								</div>
+							</div>
+							<div class="request__date">28.10.2019</div>
+							<div class="request__name">Кузнецова Татьяна Геннадьевна</div>
+							<div class="request__phone">+7 (704) 555-0127</div>
+							<div class="request__pharm">Аптека 1</div>
+							<div class="request__adress">
+								<div>
+									<div class="request__adress-country">
+										<img class="fitImg" src="img/russiaFlag.svg" alt="russia">
+									</div>
+								</div>
+								<span>Свердловская область, Екатеринбур, Центральный, ул. Демидова, д 16/1</span>
+							</div>
+						</div>
+						<div class="request">
+							<div class="request__check">
+								<div class="checkbox">
+									<input id="checkbox5" type="checkbox" class="checkbox__input">
+									<label for="checkbox5" class="checkbox__label" tabindex="0"></label>
+								</div>
+							</div>
+							<div class="request__date">27.10.2019</div>
+							<div class="request__name">Ломакина Надежда Михайловна</div>
+							<div class="request__phone">+7 (207) 555-0119</div>
+							<div class="request__pharm">Аптека 3</div>
+							<div class="request__adress">
+								<div>
+									<div class="request__adress-country">
+										<img class="fitImg" src="img/russiaFlag.svg" alt="russia">
+									</div>
+								</div>
+								<span>Волгоградская область, Волгоград, ул. Красная, д. 45</span>
+							</div>
+						</div>
+						<div class="request">
+							<div class="request__check">
+								<div class="checkbox">
+									<input id="checkbox1" type="checkbox" class="checkbox__input">
+									<label for="checkbox1" class="checkbox__label" tabindex="0"></label>
+								</div>
+							</div>
+							<div class="request__date">26.10.2019</div>
+							<div class="request__name">Текутьев Александр Александрович</div>
+							<div class="request__phone">+7 (219) 555-0114</div>
+							<div class="request__pharm">Аптека 3</div>
+							<div class="request__adress">
+								<div>
+									<div class="request__adress-country">
+										<img class="fitImg" src="img/russiaFlag.svg" alt="russia">
+									</div>
+								</div>
+								<span>Вологодская область, Вологда, Железнодорожный, ул. Вокзальная, д. 38 </span>
+							</div>
+						</div>
+						<div class="request request--confirmed">
+							<div class="request__check">
+								<div class="checkbox">
+									<input checked id="checkbox1" type="checkbox" class="checkbox__input">
+									<label for="checkbox1" class="checkbox__label" tabindex="0"></label>
+								</div>
+							</div>
+							<div class="request__date">26.10.2019</div>
+							<div class="request__name">Попова Анастасия Владимировна</div>
+							<div class="request__phone">+7 (229) 555-0109</div>
+							<div class="request__pharm">Аптека 3</div>
+							<div class="request__adress">
+								<div>
+									<div class="request__adress-country">
+										<img class="fitImg" src="img/russiaFlag.svg" alt="russia">
+									</div>
+								</div>
+								<span>Свердловская область, Екатеринбур, Центральный, ул. Демидова, д 16/1</span>
+							</div>
+						</div>
+						<div class="request">
 							<div class="request__check">
 								<div class="checkbox">
 									<input id="checkbox1" type="checkbox" class="checkbox__input">
@@ -162,12 +280,16 @@
 								</div>
 								<div class="input">
 									<label class="input__label">Комментарий</label>
-									<textarea placeholder="При отрицательном решении по заявке заполните поле 
-									комментарий" class="input__control"></textarea>
+									<textarea placeholder="При отрицательном решении по заявке заполните поле комментарий"
+										class="input__control"></textarea>
 								</div>
 								<div class="coordination__buttons">
 									<button class="btn">Добавить</button>
 									<button class="btn btn--secondary">Отменить</button>
+								</div>
+								<div tabindex="0" class="coordination__close">
+									<span></span>
+									<span></span>
 								</div>
 							</div>
 						</div>
@@ -179,6 +301,7 @@
 	<script src="js/menuLinksControl.js"></script>
 	<script src="js/requestConfirmControl.js"></script>
 	<script src="js/selectControl.js"></script>
+	<script src="js/coordination.js"></script>
 </body>
 
 </html>
